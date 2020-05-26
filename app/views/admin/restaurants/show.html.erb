@@ -1,5 +1,7 @@
 <h1><%= @restaurant.name %></h1>
 
+<%= image_tag @restaurant.image.url, width: '600px' if @restaurant.image?%>
+
 Opening Hours:<%= @restaurant.opening_hours %><br>
 Tel: <%= @restaurant.tel %><br>
 Address: <%= @restaurant.address %><br>
